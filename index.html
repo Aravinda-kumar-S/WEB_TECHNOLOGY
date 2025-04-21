@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebTechnology by Aravindakumar-12 | AI&DS</title>
+  <style>
+    :root {
+      --primary: #004e92;
+      --secondary: #000428;
+      --highlight: #0f9b8e;
+      --bg: #f8f8f8;
+      --text: #1e1e2f;
+      --accent: #ff4081;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    header {
+      background: linear-gradient(45deg, var(--primary), var(--highlight));
+      padding: 2rem;
+      text-align: center;
+      color: #fff;
+      animation: slideDown 0.6s ease-out;
+    }
+    @keyframes slideDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    nav {
+      background-color: var(--secondary);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 1rem 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0.5rem 1rem;
+      font-weight: bold;
+      position: relative;
+    }
+    nav a::after {
+      content: '';
+      display: block;
+      height: 2px;
+      background: var(--highlight);
+      transition: width 0.3s;
+      width: 0;
+    }
+    nav a:hover::after {
+      width: 100%;
+    }
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 12px;
+      margin-top: 2rem;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      animation: slideUp 0.5s ease-in-out;
+    }
+    @keyframes slideUp {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    h2 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+    .button {
+      display: inline-block;
+      margin: 0.5rem 1rem 0 0;
+      padding: 0.8rem 1.2rem;
+      background: linear-gradient(to right, var(--highlight), var(--primary));
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.4s;
+    }
+    .button:hover {
+      background: var(--accent);
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    .grid-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      list-style: none;
+      padding-left: 0;
+    }
+    .grid-links li a {
+      display: block;
+      padding: 0.8rem;
+      background: #e3f2fd;
+      border-left: 5px solid var(--highlight);
+      text-decoration: none;
+      color: var(--text);
+      border-radius: 6px;
+      transition: transform 0.2s, background 0.3s;
+    }
+    .grid-links li a:hover {
+      background: var(--highlight);
+      color: white;
+      transform: translateY(-3px);
+    }
+    embed {
+      width: 100%;
+      height: 600px;
+      margin-top: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    footer {
+      text-align: center;
+      background: var(--primary);
+      color: white;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>WebTechnology</h1>
+    <p>Aravindakumar-12 | Department of AI&DS</p>
+  </header>
+  
+  <nav>
+    <a href="#intro">Introduction</a>
+    <a href="#prereq">Pre-requisites</a>
+    <a href="#syllabus">Syllabus</a>
+    <a href="#downloads">Downloads</a>
+    <a href="#resources">Resources</a>
+  </nav>
+
+  <section id="intro">
+  <h2>📘 Introduction to Web Technology </h2>
+  <p><strong>Web Technology</strong> is a vast field encompassing the tools and techniques required to communicate, interact, and conduct operations over the internet. From the earliest versions of static web pages to today's dynamic, user-centric applications powered by AI and cloud computing, web technology has evolved into one of the most essential components of the digital world.</p>
+
+  <h3>📜 History and Evolution</h3>
+  <p>The World Wide Web (WWW) was created in 1989 by Tim Berners-Lee. It started with basic HTML pages. Over the years, technologies such as CSS, JavaScript, PHP, and frameworks like React, Angular, and Node.js transformed the web from a read-only medium into a highly interactive platform for users and businesses.</p>
+
+  <h3>🎨 Frontend Technologies</h3>
+  <ul>
+    <li><strong>HTML:</strong> The structure of every web page. HTML5 introduced features like video playback, canvas drawing, and semantic tags.</li>
+    <li><strong>CSS:</strong> Controls layout, color, and style. CSS3 added transitions, animations, and flex/grid layouts.</li>
+    <li><strong>JavaScript:</strong> Brings interactivity. Frameworks like React, Angular, and Vue enable building SPAs (Single Page Applications).</li>
+  </ul>
+
+  <h3>🔧 Backend Technologies</h3>
+  <ul>
+    <li><strong>PHP:</strong> Popular for CMS like WordPress. Easy to deploy and use with MySQL.</li>
+    <li><strong>Node.js:</strong> JavaScript runtime for backend development. Uses asynchronous, event-driven architecture.</li>
+    <li><strong>Python:</strong> Widely used with Django and Flask for building REST APIs and data-driven web apps.</li>
+  </ul>
+
+  <h3>💾 Databases and Storage</h3>
+  <p>Databases are critical for storing and retrieving data. Web technologies often use:</p>
+  <ul>
+    <li>Relational Databases: MySQL, PostgreSQL</li>
+    <li>NoSQL Databases: MongoDB, Firebase</li>
+  </ul>
+
+  <h3>🧱 Full-Stack Development</h3>
+  <p>Full-stack developers work on both frontend and backend parts. They build REST APIs, connect frontend with backend via HTTP requests, and ensure the entire application runs smoothly.</p>
+
+  <h3>🌍 Hosting and Deployment</h3>
+  <p>Web apps are hosted on servers and accessed via browsers. Common hosting solutions include:</p>
+  <ul>
+    <li>Traditional: Apache, Nginx</li>
+    <li>Modern: Vercel, Netlify, GitHub Pages, Firebase Hosting</li>
+    <li>Cloud: AWS, Azure, Google Cloud</li>
+  </ul>
+
+  <h3>🔐 Security Aspects</h3>
+  <p>Web security includes authentication, data encryption, and protection from attacks like:</p>
+  <ul>
+    <li>SQL Injection</li>
+    <li>Cross-Site Scripting (XSS)</li>
+    <li>Cross-Site Request Forgery (CSRF)</li>
+    <li>HTTPS and Secure Cookies</li>
+  </ul>
+
+  <h3>📱 Responsive Design and Mobile Web</h3>
+  <p>Websites must be mobile-friendly. CSS Media Queries and responsive frameworks (Bootstrap, Tailwind CSS) ensure content scales across devices.</p>
+
+  <h3>🔄 Web APIs and Services</h3>
+  <ul>
+    <li>REST API: Follows CRUD with HTTP methods (GET, POST, PUT, DELETE)</li>
+    <li>GraphQL: Query-based data fetching for flexibility</li>
+    <li>AJAX and Fetch API: For making asynchronous web requests</li>
+  </ul>
+
+  <h3>🤖 Emerging Technologies</h3>
+  <p>Modern web integrates:</p>
+  <ul>
+    <li>AI/ML in Web: Chatbots, recommendation systems</li>
+    <li>Progressive Web Apps (PWA)</li>
+    <li>Voice Search, WebAssembly</li>
+  </ul>
+
+  <h3>👩‍💻 Real-World Applications</h3>
+  <ul>
+    <li>E-commerce sites (Amazon, Flipkart)</li>
+    <li>Social media (Facebook, Instagram)</li>
+    <li>Banking and FinTech platforms</li>
+    <li>Education portals and e-learning platforms</li>
+  </ul>
+
+  <h3>🎯 Career Opportunities</h3>
+  <p>Web technology opens doors to many roles:</p>
+  <ul>
+    <li>Frontend Developer</li>
+    <li>Backend Developer</li>
+    <li>Full Stack Developer</li>
+    <li>UI/UX Designer</li>
+    <li>DevOps and Cloud Engineer</li>
+  </ul>
+
+  <h3>📈 Future of Web Technology</h3>
+  <ul>
+    <li>Low-code/No-code development</li>
+    <li>AR/VR in web</li>
+    <li>Web 3.0 and decentralized web</li>
+  </ul>
+
+  <h3>🔚 Conclusion</h3>
+  <p>Web Technology is not just about building websites, it's about connecting the world digitally. It combines art and logic, creativity and structure, user experience and system design — making it one of the most rewarding and impactful domains in computing.</p>
+</section>
+
+  <section id="prereq">
+    <h2>⚙️ Pre-Requisites</h2>
+    <ul>
+      <li>Basic internet and computer operation knowledge</li>
+      <li>Familiarity with text editors (VS Code, Sublime Text)</li>
+      <li>Understanding of logical programming (C, Python basics)</li>
+      <li>Basic knowledge of how web browsers work</li>
+    </ul>
+  </section>
+
+  <section id="syllabus">
+    <h2>📚 Web Technology Syllabus</h2>
+    <p>Download the complete course syllabus below:</p>
+    <a class="button" href="D:\WEB TECH\c839640e-4a4b-4e21-84c4-5119e2850f0a.pdf"download>📥 Download Syllabus PDF</a>
+  </section>
+
+  <section id="downloads">
+    <h2>📦 Course Downloads</h2>
+    <a class="button" href="D:\WEB TECH\WT LAB MANUAL.pdf"download>🧪 Lab Manual</a>
+    <a class="button" href="D:\WEB TECH\8. Web Technology Materials (5 Units).pdf.pdf"download>📘 Study Material (5 Units)</a>
+    
+  </section>
+
+  <section id="resources">
+    <h2>🌐 30+ Useful Web Technology References</h2>
+    <ul class="grid-links">
+      <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+      <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+      <li><a href="https://www.geeksforgeeks.org/web-technology/" target="_blank">GeeksforGeeks WebTech</a></li>
+      <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+      <li><a href="https://www.codecademy.com/learn" target="_blank">Codecademy</a></li>
+      <li><a href="https://www.tutorialspoint.com/web_developers_guide.htm" target="_blank">TutorialsPoint</a></li>
+      <li><a href="https://htmlreference.io/" target="_blank">HTML Reference</a></li>
+      <li><a href="https://cssreference.io/" target="_blank">CSS Reference</a></li>
+      <li><a href="https://javascript.info/" target="_blank">JavaScript Info</a></li>
+      <li><a href="https://www.freecodecamp.org/learn/" target="_blank">FreeCodeCamp</a></li>
+      <li><a href="https://web.dev/" target="_blank">Web.dev (Google)</a></li>
+      <li><a href="https://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
+      <li><a href="https://frontendmasters.com/" target="_blank">Frontend Masters</a></li>
+      <li><a href="https://javascript30.com/" target="_blank">JavaScript 30</a></li>
+      <li><a href="https://eloquentjavascript.net/" target="_blank">Eloquent JavaScript Book</a></li>
+      <li><a href="https://github.com/getify/You-Dont-Know-JS" target="_blank">You Don't Know JS (GitHub)</a></li>
+      <li><a href="https://theodinproject.com/" target="_blank">The Odin Project</a></li>
+      <li><a href="https://fullstackopen.com/" target="_blank">Full Stack Open</a></li>
+      <li><a href="https://learn.microsoft.com/en-us/training/paths/web-development/" target="_blank">Microsoft Web Dev Path</a></li>
+      <li><a href="https://www.php.net/manual/en/index.php" target="_blank">PHP Manual</a></li>
+      <li><a href="https://laravel.com/docs" target="_blank">Laravel Docs</a></li>
+      <li><a href="https://nodejs.org/en/docs" target="_blank">Node.js Docs</a></li>
+      <li><a href="https://expressjs.com/" target="_blank">Express.js</a></li>
+      <li><a href="https://www.mysql.com/" target="_blank">MySQL</a></li>
+      <li><a href="https://firebase.google.com/docs" target="_blank">Firebase Docs</a></li>
+      <li><a href="https://reactjs.org/docs/getting-started.html" target="_blank">ReactJS</a></li>
+      <li><a href="https://vuejs.org/guide/introduction.html" target="_blank">VueJS</a></li>
+      <li><a href="https://angular.io/docs" target="_blank">Angular Docs</a></li>
+      <li><a href="https://graphql.org/learn/" target="_blank">GraphQL</a></li>
+      <li><a href="https://restfulapi.net/" target="_blank">REST API Guide</a></li>
+      <li><a href="https://roadmap.sh/frontend" target="_blank">Frontend Developer Roadmap</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    &copy; 2025 Aravindakumar-12 | AI&DS Department 
+  </footer>
+</body>
+</html>
