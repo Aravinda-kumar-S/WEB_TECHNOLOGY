@@ -5,4 +5,8 @@
 ## 🧪 Web Technology Lab Manual
 
 [📥 Download WT LAB MANUAL](https://raw.githubusercontent.com/Aravinda-kumar-S/WEB_TECHNOLOGY/main/WEB%20TECH/WT%20LAB%20MANUAL.pdf)
+## 📘 Web Technology Syllabus
+
+[📥 Download Syllabus (PDF)](https://raw.githubusercontent.com/Aravinda-kumar-S/WEB_TECHNOLOGY/main/WEB%20TECH/c839640e-4a4b-4e21-84c4-5119e2850f0a.pdf)
+
 
